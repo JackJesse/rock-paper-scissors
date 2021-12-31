@@ -1,4 +1,5 @@
 //Rock-Paper-Scissors
+const buttons = document.querySelectorAll('.button')
 const cpuDisplay = document.querySelector('#cpu-div')
 const playerScore = document.querySelector('#playerScore')
 const cpuScore = document.querySelector('#cpuScore')
@@ -45,13 +46,21 @@ function scissorsClicked() {
     console.log(random)
 }
 
+
+
 function showAlert() {
-    if (round > 5 && player1 > cpu) {
-        rounds.innerHTML = 'YOU WON!'
-    } else if (round > 5 && cpu > player1) {
-        rounds.innerHTML = 'YOU LOST'
+    if (player1 >= 5 && player1 > cpu) {
+        rounds.innerHTML = 'YOU WON!';
+        round = 1
+        player1 = 0
+        cpu = 0
+    } else if (cpu >= 5 && cpu > player1) {
+        rounds.innerHTML = 'YOU LOSE';
+        round = 1
+        player1 = 0
+        cpu = 0
     } else {
-        return null
+        return null;
     }
 }
 
