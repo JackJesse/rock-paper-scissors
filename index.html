@@ -1,2 +1,51 @@
 <!DOCTYPE html>
-<script src="script.js" text="javascript"></script>
+<html>
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Shizuru&display=swap');
+            </style>
+        <meta charset="utf-8">
+        <title>Rock Paper Scissors</title>
+        <link rel="styleSheet" href="src/style.css">
+        <script src="src/script.js" defer></script>
+    </head>
+    <body>
+
+        <header><h1>Rock Paper Scissors</h1></header>
+
+            <h3>CPU</h3>
+            <div id="cpu-div">
+                <!-- <p>Rock</p>
+                <image class=cpu-image src="images/rock1.svg" alt="rock"> -->
+            </div>
+
+
+        <div class="buttons">
+            <!-- <image class="button" src="images/rock1.svg" alt="Rock">
+            <image class="button" src="images/paper1.svg" alt="Paper">
+            <image class="button" src="images/scissors1.svg" alt="Scissors"> -->
+            <input onclick="return rockClicked()" type="image" src="images/rock1.svg" name="rock" class="button" id="btnRock" />
+            <input onclick="return paperClicked()" type="image" src="images/paper1.svg" name="paper" class="button" id="btnPaper" />
+             <input onclick="return scissorsClicked()" type="image" src="images/scissors1.svg" name="scissors" class="button" id="btnScissors" />
+            </div>
+        
+        <div class="scoreboard">
+            <h3>Scoreboard</h3>
+            <p>Round</p>
+            <p class="round">1</p>
+            <div class="players">
+                <div>
+                    <h4 class="player1">PLAYER 1</h4>
+                    <p id="playerScore"></p>
+                </div>
+                <div>
+                    <h4 class="cpu">CPU</h4>
+                    <p id="cpuScore"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- <script src="src/script.js"></script> -->
+    </body>
+
+</html>

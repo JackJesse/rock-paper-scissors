@@ -1,0 +1,93 @@
+body {
+    font-family: 'Rock Salt', cursive;
+    background-color: whitesmoke;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+#cpu-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid red;
+    width: 150px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+p {
+    display: flex;
+    margin: 0px;
+}
+
+.cpu-image {
+    display: flex;
+    width: 50px;
+    height: auto;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    max-width: 10em;
+    border-radius: 90px;  
+    box-shadow: 1px 10px;
+    min-width: 5em;
+}
+
+.button:hover {
+    background-color: greenyellow;
+    box-shadow: 1px 10px greenyellow;
+    transform: scale(1.2);
+}
+
+.scoreboard {
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.player1 {
+    color: blue;
+}
+
+.cpu {
+    color: red;
+}
+
+
+.players {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 100px;
+}
+
+p {
+    display: flex;
+    justify-content: space-evenly;
+}
+
